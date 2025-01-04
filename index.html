@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome-section">
+            
+        <h1 class="welcome-text">Welcome to Dverse</h1>
+        
+        <h2 class="handwriting">" Where Elegance Meets Purpose "</h2>
+</div>
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="about.webp" alt="About Us"  data-aos="fade-right" data-aos-duration="1000">
+        </div>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Dverse! We believe in creating beautiful and functional designs
+                that inspire creativity. Our mission is to provide top-notch services and
+                templates that bring your ideas to life. 
+            </p>
+            <p>
+                Whether you're here to explore our services or get inspired, we're excited
+                to be part of your journey. Let's create something amazing together!
+            </p>
+            <button class="about-btn">Learn More</button>
+        </div>
+    </div>
+</section>
+<section id="services-section">
+<div class="services-header">
+    <h2>Our Services</h2>
+    <p>We offer a range of services to help you achieve your goals.</p>
+</div>
+<div class="services-container">
+    
+    <div class="service-box" data-aos="fade-up" data-aos-duration="1000">
+        <img src="blog.png" alt="Service 1">
+        <h3>SEO Blog Services</h3>
+        <p>Optimize your blog for search engines to increase traffic and visibility.</p>
+    </div>
+    <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <img src="content-writing.png" alt="Service 2">
+        <h3>Content Writing</h3>
+        <p>High-quality, engaging content tailored to your needs.</p>
+    </div>
+    <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <img src="mail.png" alt="Service 3">
+        <h3>Email Copywriting</h3>
+        <p>Create emails that convert and build lasting relationships.</p>
+    </div>
+    <div class="service-box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <img src="printer.png" alt="Service 4">
+        <h3>E-Books & Printables</h3>
+        <p>Beautifully designed resources for your audience.</p>
+    </div>
+</div></section>
+<section id="blog" class="blog-section">
+    <h2>Our Blogs</h2>
+    <div class="blog-container">
+        <div class="blog-card" data-aos="fade-up" data-aos-duration="1000">
+            <img src="blog1.jpg" alt="Blog 1">
+            <h3>5 Ways to Improve Productivity</h3>
+            <p>Discover simple and effective tips to boost your daily productivity and get more done...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <img src="blog2.jpg" alt="Blog 2">
+            <h3>The Secrets of Creative Thinking</h3>
+            <p>Unlock your creative potential with these powerful techniques and strategies...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <img src="blog3.jpg" alt="Blog 3">
+            <h3>Design Trends for 2025</h3>
+            <p>Stay ahead of the curve with these cutting-edge design trends for the upcoming year...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="products" class="product-section">
+    <h2 data-aos="fade-up">Our Products</h2>
+    <div class="product-container">
+        <!-- Product 1: eBook -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <img src="ebook.jpg" alt="eBook">
+            <h3>SEO eBook</h3>
+            <p class="price">$25</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <!-- Product 2: Website Template -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <img src="website-template.jpg" alt="Website Template">
+            <h3>Website Template</h3>
+            <p class="price">$50</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <!-- Product 3: Printables -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <img src="printables.jpg" alt="Printables">
+            <h3>Printable Planner</h3>
+            <p class="price">$10</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <!-- Product 4: Email Copywriting Template -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <img src="email-copywriting.jpg" alt="Email Copywriting Template">
+            <h3>Email Copywriting Templates</h3>
+            <p class="price">$30</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <!-- Product 5: Social Media Graphics Template -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <img src="social-media-graphics.jpg" alt="Social Media Graphics">
+            <h3>Social Media Templates</h3>
+            <p class="price">$40</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+        <!-- Product 6: Business Card Template -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <img src="business-card-template.jpg" alt="Business Card Template">
+            <h3>Business Card Template</h3>
+            <p class="price">$15</p>
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h2 >Contact Us</h2>
+    <div class="contact-container">
+        <div class="contact-info" >
+            <h3>Get in Touch</h3>
+            <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+            <ul>
+                <li><strong>Email:</strong> info@dverse.com</li>
+                <li><strong>Phone:</strong> +123 456 7890</li>
+                <li><strong>Address:</strong> 123 Main Street, City, Country</li>
+            </ul>
+        </div>
+
+        <div class="contact-form" >
+            <h3>Send a Message</h3>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <a href="#" class="social-icon">FB</a>
+            <a href="#" class="social-icon">IG</a>
+            <a href="#" class="social-icon">TW</a>
+            <a href="#" class="social-icon">LN</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 dverse. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+</body>
+</html>
+
