@@ -1,0 +1,358 @@
+/* About Page Hero Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #4e6654, #b5d2a3, #8b4513);
+    background-size: 300% 300%; /* Dynamic gradient movement */
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+header {
+    background: #b5d2a3;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fix the navbar at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Navbar Content */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+nav .logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Push nav links to the right */
+}
+
+.nav-links li {
+    margin: 0 20px; /* Add space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8b4513; /* Brown color on hover */
+    animation: glow-effect 0.5s infinite alternate;
+}
+
+/* Custom cursor (Optional) */
+* {
+    cursor: url('cursor.png'), auto; /* Replace with your custom cursor image */
+}
+
+@keyframes glow-effect {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+padding: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Align the dropdown menu to the right */
+        background-color: #b5d2a3;
+        width: 200px;
+        flex-direction: column;
+        padding: 10px;
+        z-index: 1000;
+        border-radius: 5px; /* Add rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when hamburger is clicked */
+        transition: all 0.3s ease; /* Smooth transition */
+    }
+
+    .nav-links li {
+        margin: 15px 0; /* Add space between items in mobile view */
+    }
+
+    .nav-links a {
+        text-align: center; /* Center-align the links */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu on mobile screens */
+    }
+}
+/* General Styles */
+
+
+/* Hero Section */
+/* Hero Section */
+.about-hero {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.hero-text-box {
+    background: rgba(255, 255, 255, 0.311); /* Transparent box */
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+}
+
+.hero-text-box h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.hero-text-box p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.hero-image {
+    max-width: 300px;
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-hero{
+        height: 600px;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .hero-text-box {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+}
+
+/* Mission Section */
+.about-mission {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.mission-box {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.mission-box h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.mission-box p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Team Section */
+
+
+/* Footer */
+footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4e6654;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .mission-box {
+        padding: 1.5rem;
+    }
+
+    .team-content, .team-photo {
+        flex: 1 1 100%;
+    }
+    
+}
+.footer-section {
+    background-color: #4e6654;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Footer Navigation */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #8b4513; /* Hover effect for links */
+}
+
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icon {
+    color: white;
+    background-color: #333;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    background-color: #8b4513; /* Change on hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
