@@ -152,7 +152,7 @@ h1, h2 {
 }
 
 .section {
-    margin-bottom: 30px;
+    margin-bottom: auto;
 }
 
 .about-image {
