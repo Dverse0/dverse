@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png " alt="Logo"> <a href="index.html"></a><!-- Replace with your logo -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#products">Products</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore Our Digital Products</h1>
+      <p>Innovative tools to help you succeed</p>
+    </div>
+    <div class="hero-animation">
+      <div class="product" id="product1"></div>
+      <div class="product" id="product2"></div>
+      <div class="product" id="product3"></div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-buttons">
+      <button onclick="filterCategory('ebooks')">E-books</button>
+      <button onclick="filterCategory('templates')">Templates</button>
+      <button onclick="filterCategory('printables')">Printables</button>
+    </div>
+
+    <div class="product-list" id="product-list">
+      <div class="category-container" id="ebooks">
+        <h3>E-books</h3>
+        <div class="product-scroll" id="ebooks-scroll">
+          <div class="product-item ebooks">
+            <img src="ebook.jpg" alt="E-book 1">
+            <h3>E-book Title 1</h3>
+            <p>Description of E-book 1.</p>
+          </div>
+          <div class="product-item ebooks">
+            <img src="ebook.jpg" alt="E-book 2">
+            <h3>E-book Title 2</h3>
+            <p>Description of E-book 2.</p>
+            <a href="https://your-gumroad-product-link" class="buy-now-btn">View</a>
+          </div>
+          <div class="product-item ebooks">
+            <img src="ebook.jpg" alt="E-book 3">
+            <h3>E-book Title 3</h3>
+            <p>Description of E-book 3.</p>
+          </div>
+          <div class="product-item ebooks">
+            <img src="ebook.jpg" alt="E-book 4">
+            <h3>E-book Title 4</h3>
+            <p>Description of E-book 4.</p>
+          </div>
+          <div class="product-item ebooks">
+            <img src="ebook.jpg" alt="E-book 5">
+            <h3>E-book Title 5</h3>
+            <p>Description of E-book 5.</p>
+          </div>
+          <div class="product-item ebooks">
+            <img src="ebook.jpg" alt="E-book 6">
+            <h3>E-book Title 6</h3>
+            <p>Description of E-book 6.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="category-container" id="templates">
+        <h3>Templates</h3>
+        <div class="product-scroll" id="templates-scroll">
+          <!-- Add Template Products Here -->
+        </div>
+      </div>
+      
+      <div class="category-container" id="printables">
+        <h3>Printables</h3>
+        <div class="product-scroll" id="printables-scroll">
+          <!-- Add Printable Products Here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="product.js"></script>
+</body>
+</html>
+
