@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <div class="container">
-        <h1>About Us</h1>
-        <div class="section about-image">
-            <img src="about-us-image.jpg" alt="About Us">
-        </div>
-        <div class="section">
-            <p>Welcome to <strong>dverse</strong>, your go-to platform for creativity, productivity, and digital solutions. Our goal is to provide unique digital products, insightful blogs, and customizable templates to inspire and empower individuals in their personal and professional journeys.</p>
-        </div>
-
-        <h2>Our Mission</h2>
-        <div class="section">
-            <p>At <strong>dverse</strong>, we strive to create a harmonious blend of functionality and aesthetics. We believe that tools and resources should not only serve a purpose but also spark joy and creativity. Our mission is to help you organize, plan, and achieve your dreams with clarity and confidence.</p>
-        </div>
-
-        <h2>About the Author</h2>
-        <div class="section author">
-            <img src="author-photo.jpg" alt="Author Photo">
-            <div class="author-details">
-                <h3>Your Name</h3>
-                <p>A passionate creator and entrepreneur, I founded <strong>dverse</strong> to share my love for design, organization, and storytelling. With years of experience in digital products and content creation, I aim to provide tools that resonate with your needs and aspirations. Let’s build something extraordinary together!</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Logo"> <!-- Replace with your logo -->
             </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.html">Products</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+  <main class="main-content">
+    <!-- About Us Section -->
+    <section id="about" class="section">
+      <div class="content">
+        <h2>About Us</h2>
+        <p>    
+Welcome to Dverse!
+ We are a creative platform dedicated to providing premium digital templates and resources designed to inspire and simplify your work. 
+
+Whether you’re a professional, a student, or a creator, our goal is to help you streamline your tasks and focus on what truly matters.
+
+ At Dverse, we pride ourselves on blending functionality with elegance. From productivity planners to design templates, everything we create is meticulously crafted to bring beauty and efficiency to your projects. Join us on this journey to elevate your work and turn your ideas into achievements.
+          
+        </p>
+      </div>
+      <img src="about.webp" alt="About Us" class="section-image">
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+      <img src="mission 0.jpeg" alt="Our Mission" class="section-image">
+      <div class="content">
+        <h2>Our Mission</h2>
+        <p>
+            At Dverse, our mission is to empower individuals and businesses to unlock their full potential through innovative, high-quality digital products. We believe that great design and organization can transform how people work, create, and achieve their goals.
+
+            By offering thoughtfully crafted templates, resources,blogs and tools, we aim to make productivity accessible, creativity effortless, and success achievable for everyone. We are committed to delivering value, inspiring growth, and helping our users turn their visions into reality.
+            
+            
+        </p>
+      </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="section">
+      <div class="content">
+        <h2>About the Author</h2>
+        <p>
+            Hi! I’m Shiksha, the creator of Dverse. With a deep passion for design and productivity, I specialize in crafting digital tools that inspire creativity and simplify daily tasks. My journey began with a vision to empower individuals and businesses to achieve their goals with ease and elegance.
+
+            When I’m not designing templates or writing content, you can find me exploring new ideas, sharing insights on social media, and helping others bring their visions to life. Follow along as I continue to innovate and share tools that make life more organized, productive, and beautiful.
+            
+            
+        </p>
+        <div class="social-media">
+          
+          <a href="https://www.instagram.com/shiksharawat06/" class="social-icon instagram">Instagram</a>
+          <a href="https://www.linkedin.com/in/shiksharawat06/" class="social-icon linkedin">LinkedIn</a>
         </div>
-    </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="about.js"></script>
 </body>
 </html>
